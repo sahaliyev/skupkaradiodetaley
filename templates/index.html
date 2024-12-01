@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - OnePage Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/favicon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+    <style type="text/css">
+        .img-fluid {
+    width: 100%; /* Ensures the image fits the width of its container */
+    height: auto; /* Ensures the image fits the height of its container */
+    object-fit: cover; /* Makes the image cover the entire area without distortion */
+    object-position: center; /* Ensures the image is centered */
+}
+
+        </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+         <a href="#domoy" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'assets/img/favicon.png' %}" alt="">
+        <h1 class="sitename" style="font-weight: bolder;">СРД</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#o-nas" class="active">O нас</a></li>
+          <li><a href="#kataloq">Каталог</a></li>
+          <li><a href="#kontakt">Контакт</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+      <!-- Hero Section -->
+    <section id="domoy" class="hero section">
+
+      <img src="{% static 'assets/img/cover-img.jpeg' %}" alt="" data-aos="fade-in" class="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-out">
+          <div class="col-xl-7 col-lg-9 text-center">
+            <h1>Скупка радио деталей</h1>
+            <p>Скупка радиодеталей по лучшим ценам!</p>
+          </div>
+        </div>
+        <div class="text-center" data-aos="zoom-out" data-aos-delay="100">
+          <a href="#o-nas" class="btn-get-started">Изучить</a>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+
+
+          <!-- About Section -->
+    <section id="o-nas" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>O нас<br></h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+             <p>
+              Наша компания занимается скупкой радиодеталей, микросхем, плат, конденсаторов и других электронных компонентов.
+                Мы принимаем как новые, так и бывшие в употреблении детали с гарантией честной оценки и быстрых выплат.
+            </p>
+
+            <h4>
+                  Что мы покупаем?
+              </h4>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Микросхемы</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Радиолампы</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Конденсаторы</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>резисторы</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>транзисторы</span></li>
+            </ul>
+          </div>
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+
+              <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Печатные платы</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Ретро-радиодетали.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>РЭС 9</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>РЭС 10 </span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>КА 52 (тантал)</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="kataloq" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Каталог</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              {% for image in images %}
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="{{ image.image.url }}" class="img-fluid" alt="{{ image.name }}">
+            </div><!-- End Portfolio Item -->
+              {% endfor %}
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Контакт</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        {% if contact_info.map_url %}
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 270px;" src="{{ contact_info.map_url }}" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+          {% endif %}
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            {% if contact_info.address %}
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Адрес</h3>
+                <p>{{ contact_info.address}}</p>
+              </div>
+            </div><!-- End Info Item -->
+            {% endif %}
+          {% if contact_info.call_numbers %}
+            <div class="info-item d-flex">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Звонок</h3>
+                  {% for num in contact_info.call_numbers %}
+                    <p>{{ num }}</p>
+                  {% endfor %}
+              </div>
+            </div><!-- End Info Item -->
+          {% endif %}
+            {% if contact_info.whatsap_numbers %}
+            <div class="info-item d-flex">
+              <i class="bi bi-whatsapp flex-shrink-0"></i>
+              <div>
+                <h3>Whatsap</h3>
+                 {% for num in contact_info.whatsap_numbers %}
+                    <p>{{ num }}</p>
+                  {% endfor %}
+              </div>
+            </div><!-- End Info Item -->
+          {% endif %}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
