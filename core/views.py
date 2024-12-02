@@ -1,8 +1,16 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+
 from . import models
 
-
-# Create your views here.
+def robots_txt(request):
+    content = (
+        "User-agent: *\n"
+        "Disallow: /admin/\n"
+        "Allow: /\n"
+        "Sitemap: https://www.skupkaradiodetaley.org/sitemaps.xml\n"
+    )
+    return HttpResponse(content, content_type="text/plain")
 def index(request):
     contact_info = models.Contact.get_solo()
     contact_info = {
