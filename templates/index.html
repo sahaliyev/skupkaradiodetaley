@@ -65,16 +65,16 @@
       <!-- Hero Section -->
     <section id="domoy" class="hero section">
 
-      <img src="{% static 'assets/img/cover-img.jpeg' %}" alt="" data-aos="fade-in" class="">
+      <img src="{% static 'assets/img/cover-img.jpeg' %}" alt="" class="">
 
       <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-out">
+        <div class="row justify-content-center" >
           <div class="col-xl-7 col-lg-9 text-center">
             <h1>Скупка радио деталей</h1>
             <p>Скупка радиодеталей по лучшим ценам!</p>
           </div>
         </div>
-        <div class="text-center" data-aos="zoom-out" data-aos-delay="100">
+        <div class="text-center" >
           <a href="#o-nas" class="btn-get-started">Изучить</a>
         </div>
       </div>
@@ -86,7 +86,7 @@
     <section id="o-nas" class="about section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>O нас<br></h2>
       </div><!-- End Section Title -->
 
@@ -101,7 +101,7 @@
             <h4>
                   Что мы покупаем?
               </h4>
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 content">
 
             <ul>
               <li><i class="bi bi-check2-circle"></i> <span>Микросхемы</span></li>
@@ -111,7 +111,7 @@
               <li><i class="bi bi-check2-circle"></i> <span>транзисторы</span></li>
             </ul>
           </div>
-            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6 content">
 
               <ul>
               <li><i class="bi bi-check2-circle"></i> <span>Печатные платы</span></li>
@@ -133,7 +133,7 @@
     <section id="kataloq" class="portfolio section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>Каталог</h2>
       </div><!-- End Section Title -->
 
@@ -141,7 +141,7 @@
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4 isotope-container" >
               {% for image in images %}
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="{{ image.image.url }}" class="img-fluid" alt="{{ image.name }}">
@@ -159,13 +159,13 @@
     <!-- Contact Section -->
     <section id="kontakt" class="contact section">
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>Контакт</h2>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
         {% if contact_info.map_url %}
-        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="mb-4">
           <iframe style="border:0; width: 100%; height: 270px;" src="{{ contact_info.map_url }}" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
           {% endif %}
