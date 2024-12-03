@@ -28,9 +28,6 @@ def index(request):
 
 def return_images_as_json(request):
     images = models.Images.objects.filter(active=True)
-    paginator = Paginator(images, 10)
-    page_number = request.GET.get('page', 1)
-    page_obj = paginator.get_page(page_number)
 
     data = {
         "images": [
@@ -38,12 +35,7 @@ def return_images_as_json(request):
                 "name": image.name,
                 "url": image.image.url,
             }
-            for image in page_obj
-        ],
-        "pagination": {
-            "current_page": page_obj.number,
-            "total_pages": paginator.num_pages,
-            "total_images": paginator.count,
-        }
+            for image in images
+        ]
     }
     return JsonResponse(data)
