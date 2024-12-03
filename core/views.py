@@ -36,7 +36,7 @@ def return_images_as_json(request):
         "images": [
             {
                 "name": image.name,
-                "url": request.build_absolute_uri(image.image.url),
+                "url": image.image.url,
             }
             for image in page_obj
         ],
